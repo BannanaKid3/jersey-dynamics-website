@@ -15,15 +15,15 @@ img { display: block; max-width: 100%; }
 .back { font: 700 .72rem/1 var(--mono); letter-spacing: .06em; text-decoration: none; text-transform: uppercase; }
 .back span { color: var(--signal); }
 main { width: min(1240px, calc(100% - 48px)); margin-inline: auto; }
-.join-intro { min-height: 490px; display: grid; grid-template-columns: 1.15fr .85fr; border-bottom: 1px solid var(--ink); }
-.intro-copy { padding: 70px 8vw 70px 0; align-self: center; }
+.join-intro { min-height: 420px; display: grid; grid-template-columns: 1.35fr .65fr; border-bottom: 1px solid var(--ink); }
+.intro-copy { padding: 58px 8vw 58px 0; align-self: center; }
 .eyebrow { margin: 0 0 24px; color: var(--muted); font: 700 .68rem/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
 .eyebrow span { color: var(--signal); }
 h1 { max-width: 780px; margin: 0; font: 700 clamp(3.5rem, 7.5vw, 7.2rem)/.88 Arial, Helvetica, sans-serif; letter-spacing: -.075em; }
 .lede { max-width: 630px; margin: 30px 0 0; color: #445159; font-size: 1.12rem; }
-.bench-note { position: relative; overflow: hidden; min-height: 440px; background: var(--ink); color: var(--white); }
+.bench-note { position: relative; overflow: hidden; min-height: 350px; background: var(--ink); color: var(--white); }
 .bench-note::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, transparent 49.6%, rgb(255 255 255 / 5%) 50%), linear-gradient(transparent 49.6%, rgb(255 255 255 / 5%) 50%); background-size: 42px 42px; }
-.bench-note img { position: relative; width: 100%; height: 360px; object-fit: contain; padding: 30px 30px 0; }
+.bench-note img { position: relative; width: 100%; height: 275px; object-fit: contain; padding: 30px 22px 0; }
 .note-label { position: absolute; z-index: 1; top: 22px; left: 24px; margin: 0; color: var(--signal); font: 700 .66rem/1 var(--mono); letter-spacing: .09em; text-transform: uppercase; }
 .note-copy { position: relative; display: flex; justify-content: space-between; gap: 20px; align-items: baseline; margin: 0 26px 24px; padding-top: 17px; border-top: 1px solid rgb(255 255 255 / 25%); }
 .note-copy strong { font-size: 1.12rem; }
@@ -69,7 +69,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--ink); outline: 3
 .honeypot { position: absolute; left: -10000px; }
 @media (max-width: 900px) {
   .join-intro, .intake { grid-template-columns: 1fr; }
-  .bench-note { min-height: 400px; }
+  .bench-note { min-height: 350px; }
   .route-note { padding: 48px 0; border-right: 0; border-bottom: 1px solid var(--ink); }
   .route-note ol { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 35px; }
   .route-note li { grid-template-columns: 1fr; border-bottom: 1px solid var(--line); }
@@ -84,7 +84,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--ink); outline: 3
   h1 { font-size: clamp(3.2rem, 18vw, 5.4rem); }
   .lede { font-size: 1rem; }
   .bench-note, .bench-note img { min-height: 0; }
-  .bench-note img { height: 310px; padding-inline: 10px; }
+  .bench-note img { height: 250px; padding-inline: 10px; }
   .note-copy { display: block; }
   .note-copy span { display: block; margin-top: 6px; text-align: left; }
   .route-note ol, .row, .team-options, .submit-row { grid-template-columns: 1fr; }
