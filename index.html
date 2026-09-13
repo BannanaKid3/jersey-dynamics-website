@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jersey Dynamics | Open Humanoid Robotics</title>
+  <meta name="description" content="Jersey Dynamics is a student-led, open-source initiative building a low-cost modular humanoid platform for autonomous household tasks.">
+  <meta name="theme-color" content="#182127">
+  <link rel="icon" href="/assets/brand.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="wrap nav-inner">
+      <a class="brand" href="/" aria-label="Jersey Dynamics home"><img src="/assets/brand.svg" alt=""><span>Jersey Dynamics</span></a>
+      <div class="nav-links">
+        <a href="#hand">JD Hand</a><a href="#teams">Teams</a><a href="#system">How we build</a>
+        <a href="https://github.com/BannanaKid3/jersey-dynamics-website" rel="noopener">GitHub</a>
+        <a class="button button-primary" href="/join">Join the build</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <header class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Student-led · open source · New Jersey</div>
+          <h1>Build the humanoid. Build the system around it.</h1>
+          <p class="lead">Jersey Dynamics is developing a low-cost, modular humanoid platform for autonomous household tasks—alongside the testing, documentation, sourcing, and contributor structure needed to make the work reproducible.</p>
+          <div class="actions"><a class="button button-primary" href="/join">Join a subsystem</a><a class="button button-secondary" href="#hand">See JD Hand v0.1</a></div>
+          <div class="signals"><div><b>Real hardware first</b><span>JD Hand v0.1 is in testing.</span></div><div><b>Parallel development</b><span>Subsystems move independently.</span></div><div><b>Open by default</b><span>Code, tests, build notes, decisions.</span></div></div>
+        </div>
+        <div class="system-panel" aria-label="Jersey Dynamics system map">
+          <p class="panel-label">JERSEY DYNAMICS SYSTEM MAP</p>
+          <div class="system-map">
+            <div class="map-node"><b>PERCEPTION</b><br>vision · state</div><div class="map-node"><b>MANIPULATION</b><br>hand · arm</div><div class="map-node"><b>AUTONOMY</b><br>planning · control</div><div class="map-node"><b>EMBEDDED</b><br>sensing · power</div><div class="map-node"><b>OPERATIONS</b><br>BOM · docs · release</div>
+            <div class="map-core">SYSTEMS<br>INTEGRATION</div><i class="wire"></i><i class="wire wire-2"></i><i class="wire wire-3"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="hand" class="hand-section">
+      <div class="wrap split">
+        <div class="hand-art" aria-label="Technical outline of the JD Hand prototype">
+          <svg viewBox="0 0 420 430" role="img" aria-label="Robotic hand outline"><g fill="none" stroke="#263138" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><path d="M160 360c-28-30-43-70-40-111l4-65c1-16 10-27 23-27 15 0 23 10 23 27v42M170 225V100c0-18 10-30 25-30 16 0 25 12 25 30v115M220 215V72c0-18 11-30 26-30 15 0 25 12 25 30v149M271 221V95c0-17 10-28 24-28 15 0 25 11 25 28v153M320 248v-88c0-16 9-26 22-26 14 0 22 10 22 26v117c0 72-42 113-108 113h-30c-27 0-49-10-66-30M125 214l-30-21c-14-10-29-6-36 5-8 12-4 25 8 36l78 73"/></g><g fill="#5e95b7"><circle cx="195" cy="155" r="9"/><circle cx="246" cy="136" r="9"/><circle cx="295" cy="158" r="9"/><circle cx="342" cy="207" r="9"/><circle cx="130" cy="264" r="9"/></g></svg>
+        </div>
+        <div class="copy">
+          <div class="eyebrow">First physical subsystem</div><h2>JD Hand v0.1 is already on the bench.</h2>
+          <div class="status"><span class="pill active">PROTOTYPE BUILT</span><span class="pill active">GEAR MESH DEBUG</span><span class="pill active">CONTROL CODE</span><span class="pill">SENSING NEXT</span></div>
+          <p>The underactuated hand exists physically and is in prototype debugging and controls development. Intermittent gear binding, finger and thumb placement, sensing, and repeatability are the current work—not details we are hiding behind a finished render.</p>
+          <div class="task-list"><div><b>01</b><span>Resolve gear-mesh reliability and document failure modes.</span></div><div><b>02</b><span>Turn actuator tests into structured controls and repeatable validation.</span></div><div><b>03</b><span>Freeze a release candidate only after documented testing.</span></div></div>
+          <a class="button button-primary" href="/join?path=contributor&amp;team=Manipulation%20%2B%20Hand">Work on the hand</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="teams">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Parallel build tracks</div><h2>A humanoid is more than robot-shaped CAD.</h2></div><p>Teams own bounded interfaces and measurable deliverables so hardware, software, and the operating system around the project can advance at the same time.</p></div>
+        <div class="filters" aria-label="Filter teams"><button class="filter" data-filter="all" aria-pressed="true">All teams</button><button class="filter" data-filter="hardware" aria-pressed="false">Hardware</button><button class="filter" data-filter="software" aria-pressed="false">Software</button><button class="filter" data-filter="systems" aria-pressed="false">Systems</button><button class="filter" data-filter="operations" aria-pressed="false">Operations</button></div>
+        <div class="cards">
+          <a class="team-card" data-team-category="hardware" href="/join?team=Manipulation%20%2B%20Hand"><small>01 / HARDWARE</small><h3>Manipulation + Hand</h3><p>Underactuation, actuation, sensing, reliability, and grasp testing.</p><span class="card-link">Join this team →</span></a>
+          <a class="team-card" data-team-category="hardware" href="/join?team=Arms%20%2B%20Structure"><small>02 / HARDWARE</small><h3>Arms + Structure</h3><p>Joint architecture, load paths, packaging, and mechanical interfaces.</p><span class="card-link">Join this team →</span></a>
+          <a class="team-card" data-team-category="hardware" href="/join?team=Mobility"><small>03 / HARDWARE</small><h3>Mobility</h3><p>Stability, drivetrains, locomotion concepts, and system constraints.</p><span class="card-link">Join this team →</span></a>
+          <a class="team-card" data-team-category="software" href="/join?team=Perception%20%2B%20Head"><small>04 / SOFTWARE</small><h3>Perception + Head</h3><p>Scene understanding, cameras, sensing, and human-aware interaction.</p><span class="card-link">Join this team →</span></a>
+          <a class="team-card" data-team-category="software" href="/join?team=Autonomy%20%2B%20Controls"><small>05 / SOFTWARE</small><h3>Autonomy + Controls</h3><p>Planning, state estimation, task execution, and control.</p><span class="card-link">Join this team →</span></a>
+          <a class="team-card" data-team-category="hardware" href="/join?team=Electronics%20%2B%20Embedded"><small>06 / EMBEDDED</small><h3>Electronics + Embedded</h3><p>Motor control, sensors, communications, and power architecture.</p><span class="card-link">Join this team →</span></a>
+          <a class="team-card" data-team-category="software" href="/join?team=Simulation"><small>07 / DIGITAL</small><h3>Simulation</h3><p>Digital twins, test environments, and repeatable experiments.</p><span class="card-link">Join this team →</span></a>
+          <a class="team-card" data-team-category="systems" href="/join?team=Research"><small>08 / RESEARCH</small><h3>Research</h3><p>Literature, benchmarking, design trade studies, and technical notes.</p><span class="card-link">Join this team →</span></a>
+          <a class="team-card" data-team-category="systems" href="/join?team=Systems%20%2B%20Integration"><small>09 / SYSTEM</small><h3>Systems + Integration</h3><p>Requirements, interfaces, integration plans, and release gates.</p><span class="card-link">Join this team →</span></a>
+          <a class="team-card" data-team-category="operations" href="/join?team=Product%20%2B%20Operations"><small>10 / OPERATIONS</small><h3>Product + Operations</h3><p>BOM strategy, sourcing, cost targets, roadmap, and reproducibility.</p><span class="card-link">Join this team →</span></a>
+          <a class="team-card" data-team-category="operations" href="/join?team=Documentation%20%2B%20Release"><small>11 / OPEN SOURCE</small><h3>Documentation + Release</h3><p>Build guides, test records, contributor docs, and versioned releases.</p><span class="card-link">Join this team →</span></a>
+          <a class="team-card" data-team-category="operations" href="/join?team=Community%20%2B%20Partnerships"><small>12 / COMMUNITY</small><h3>Community + Partnerships</h3><p>Contributor onboarding, schools, labs, and open-source collaboration.</p><span class="card-link">Join this team →</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="system" class="build-loop"><div class="wrap"><div class="eyebrow">Management + technology loop</div><h2>Every design decision has to survive engineering and reality.</h2><div class="steps"><div class="step"><b>01 / DEFINE</b><h3>Requirements</h3><p>What must it do, at what cost, and under what interfaces?</p></div><div class="step"><b>02 / BUILD</b><h3>Prototype</h3><p>Build the smallest artifact that can answer the question.</p></div><div class="step"><b>03 / MEASURE</b><h3>Validate</h3><p>Log failures, test repeatability, and compare alternatives.</p></div><div class="step"><b>04 / RELEASE</b><h3>Scale the learning</h3><p>Freeze what works, document it, and improve the next starting point.</p></div></div></div></section>
+
+    <section class="paths"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Three ways in</div><h2>Choose the kind of responsibility you want.</h2></div><p>Contributions can be technical, operational, research-focused, or community-facing. What matters is owning a clear piece of work.</p></div><div class="path-grid"><article class="path"><div class="eyebrow">Contribute</div><h3>Complete a scoped task</h3><p>Join an existing subsystem, pick a documented issue, and improve the shared build.</p><a class="button button-secondary" href="/join?path=contributor">Become a contributor</a></article><article class="path"><div class="eyebrow">Lead</div><h3>Own a subsystem</h3><p>Define interfaces, organize contributors, document decisions, and deliver measurable progress.</p><a class="button button-secondary" href="/join?path=leadership">Explore leadership</a></article><article class="path"><div class="eyebrow">Partner</div><h3>Support or collaborate</h3><p>Schools, labs, mentors, and technical organizations can help with expertise, equipment, testing, or reach.</p><a class="button button-secondary" href="/join?path=partner">Partner with us</a></article></div></div></section>
+
+    <section class="final-cta"><div class="wrap"><h2>There is already something real to improve.</h2><p>You do not need to wait for a finished humanoid. Join the current hand build, begin another subsystem, formalize testing, or make the project easier for the next contributor to enter.</p><div class="actions"><a class="button button-primary" href="/join">Join Jersey Dynamics</a><a class="button button-secondary" href="mailto:jerseydynamicsrobotics@gmail.com">Ask a question</a></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap footer-inner"><div><b>Jersey Dynamics</b><br><small>Open-source humanoid robotics · New Jersey · © <span data-year>2026</span></small></div><div class="footer-links"><a href="/privacy">Privacy</a><a href="mailto:jerseydynamicsrobotics@gmail.com">Contact</a><a href="https://github.com/BannanaKid3/jersey-dynamics-website" rel="noopener">GitHub</a></div></div></footer>
+</body>
+</html>
