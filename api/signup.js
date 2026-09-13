@@ -2,6 +2,11 @@ import { neon } from '@neondatabase/serverless';
 
 const clean = (value, max = 500) => typeof value === 'string' ? value.trim().slice(0, max) : '';
 const validEmail = (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+const hasDelivery = () => Boolean(
+  process.env.DATABASE_URL || process.env.POSTGRES_URL || process.env.NEON_DATABASE_URL ||
+  process.env.INTAKE_WEBHOOK_URL || process.env.SIGNUP_WEBHOOK_URL || process.env.GOOGLE_APPS_SCRIPT_URL ||
+  (process.env.RESEND_API_KEY && process.env.INTAKE_EMAIL_TO)
+);
 
 async function saveToDatabase(submission) {
   const url = process.env.DATABASE_URL || process.env.POSTGRES_URL || process.env.NEON_DATABASE_URL;
@@ -42,6 +47,10 @@ async function sendByEmail(submission) {
 
 export default async function handler(request, response) {
   response.setHeader('Cache-Control', 'no-store');
+  if (request.method === 'GET') {
+    const configured = hasDelivery();
+    return response.status(configured ? 200 : 503).json({ok:configured,service:'Jersey Dynamics intake'});
+  }
   if (request.method !== 'POST') return response.status(405).json({ok:false});
   const body = typeof request.body === 'string' ? JSON.parse(request.body || '{}') : (request.body || {});
   if (clean(body.website)) return response.status(200).json({ok:true});
