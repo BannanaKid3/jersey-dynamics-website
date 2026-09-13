@@ -1,2 +1,78 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Join Jersey Dynamics</title><meta name="description" content="Join a Jersey Dynamics subsystem, take ownership of a build track, or collaborate as a school, lab, mentor, or partner."><meta name="theme-color" content="#182127"><link rel="icon" href="/assets/brand.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/join.css"><script src="/assets/join.js" defer></script></head>
-<body><div class="wrap"><nav class="top"><a class="brand" href="/"><img src="/assets/brand.svg" alt=""><span>Jersey Dynamics</span></a></nav><main class="shell"><section class="intro"><div class="label">Contributor intake</div><h1>Find a place in the build.</h1><p>Tell us what you want to work on. We use this form to route contributors, subsystem leads, and open-source partners into scoped next steps.</p><ul><li>JD Hand v0.1 is already in active testing.</li><li>New subsystems can start in parallel.</li><li>Leadership means owning work, not collecting a title.</li></ul></section><section class="form-area"><form id="interest-form"><div class="row"><div class="field"><label for="name">Name *</label><input id="name" name="name" required maxlength="100" autocomplete="name"></div><div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" required maxlength="254" autocomplete="email"></div></div><div class="row"><div class="field"><label for="path">How do you want to participate? *</label><select id="path" name="path" required><option value="contributor">Contributor</option><option value="leadership">Leadership / subsystem ownership</option><option value="partner">School / lab / mentor / partner</option></select></div><div class="field"><label for="location">Broad location</label><input id="location" name="location" maxlength="100" placeholder="e.g. North Jersey or remote"></div></div><fieldset class="field" style="border:0;padding:0;margin-inline:0"><legend class="legend">What interests you?</legend><div class="team-options" id="team-options"></div></fieldset><div class="row"><div class="field"><label for="experience">Relevant experience</label><input id="experience" name="experience" maxlength="300" placeholder="CAD, controls, writing, outreach..."></div><div class="field"><label for="availability">Availability</label><input id="availability" name="availability" maxlength="100" placeholder="e.g. 3 hours/week"></div></div><div class="field"><label for="note">Anything we should know?</label><textarea id="note" name="note" maxlength="2000" placeholder="What would you like to build or own first?"></textarea></div><label class="consent"><input name="age" type="checkbox" required><span>I confirm I am at least 13 years old. *</span></label><label class="consent"><input name="consent" type="checkbox" required><span>I agree to receive onboarding and project-update emails. I can unsubscribe later. *</span></label><input class="honeypot" name="website" tabindex="-1" autocomplete="off"><button class="button" type="submit">Send my interest</button><p class="muted">We collect only what is needed for onboarding and project communication. See our <a href="/privacy">privacy notice</a>.</p><div id="form-message" class="message" role="status" aria-live="polite"></div></form></section></main></div></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Join the build | Jersey Dynamics</title>
+  <meta name="description" content="Choose a real piece of the Jersey Dynamics build: contribute to a subsystem, own a workstream, or collaborate as a school, lab, mentor, or partner.">
+  <meta name="theme-color" content="#10191e">
+  <link rel="icon" href="/assets/brand.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/join.css">
+  <script src="/assets/join.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Jersey Dynamics home"><img src="/assets/brand.svg" alt=""><span>Jersey Dynamics</span></a>
+    <a class="back" href="/">Back to the build <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="join-intro" aria-labelledby="join-title">
+      <div class="intro-copy">
+        <p class="eyebrow"><span>JOIN / 01</span> Open contributor intake</p>
+        <h1 id="join-title">Pick a real piece of the build.</h1>
+        <p class="lede">Tell us what you can help move forward. We use your answers to match you with a concrete subsystem, task, or conversation—not a generic mailing list.</p>
+      </div>
+
+      <div class="bench-note">
+        <p class="note-label">On the bench now</p>
+        <img src="/assets/hand-diagram.svg" alt="Diagram of the Jersey Dynamics underactuated hand with two center fingers and one thumb on each side">
+        <div class="note-copy"><strong>JD Hand / v0.1</strong><span>4 digits · 2 center fingers · 2 side thumbs</span></div>
+      </div>
+    </section>
+
+    <section class="intake" aria-label="Contributor intake form">
+      <aside class="route-note">
+        <p class="eyebrow"><span>HOW IT WORKS</span></p>
+        <ol>
+          <li><span>01</span><div><strong>Choose a lane</strong><p>Make, code, document, organize, or collaborate.</p></div></li>
+          <li><span>02</span><div><strong>Tell us your starting point</strong><p>Curiosity counts. Experience helps us scope the first task.</p></div></li>
+          <li><span>03</span><div><strong>Get a concrete next step</strong><p>We follow up with the most useful place to begin.</p></div></li>
+        </ol>
+        <p class="plain-note">Leadership here means owning work and communicating progress—not collecting a title.</p>
+      </aside>
+
+      <form id="interest-form">
+        <div class="form-heading">
+          <p class="eyebrow"><span>YOUR DETAILS</span> Required fields marked *</p>
+          <h2>Where do you want to contribute?</h2>
+        </div>
+        <div class="row">
+          <div class="field"><label for="name">Name *</label><input id="name" name="name" required maxlength="100" autocomplete="name"></div>
+          <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" required maxlength="254" autocomplete="email"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="path">How do you want to participate? *</label><select id="path" name="path" required><option value="contributor">Contributor</option><option value="leadership">Leadership / subsystem ownership</option><option value="partner">School / lab / mentor / partner</option></select></div>
+          <div class="field"><label for="location">Broad location</label><input id="location" name="location" maxlength="100" placeholder="North Jersey, another state, or remote"></div>
+        </div>
+        <fieldset class="field choice-field"><legend class="legend">What interests you?</legend><div class="team-options" id="team-options"></div></fieldset>
+        <div class="row">
+          <div class="field"><label for="experience">Relevant experience</label><input id="experience" name="experience" maxlength="300" placeholder="CAD, controls, writing, outreach..."></div>
+          <div class="field"><label for="availability">Availability</label><input id="availability" name="availability" maxlength="100" placeholder="For example: 3 hours/week"></div>
+        </div>
+        <div class="field"><label for="note">What would you like to build or own first?</label><textarea id="note" name="note" maxlength="2000" placeholder="A rough idea is enough. Tell us what catches your attention."></textarea></div>
+        <div class="agreements">
+          <label class="consent"><input name="age" type="checkbox" required><span>I confirm I am at least 13 years old. *</span></label>
+          <label class="consent"><input name="consent" type="checkbox" required><span>I agree to receive onboarding and project-update emails. I can unsubscribe later. *</span></label>
+        </div>
+        <input class="honeypot" name="website" tabindex="-1" autocomplete="off">
+        <div class="submit-row">
+          <button class="button" type="submit">Send my interest <span aria-hidden="true">→</span></button>
+          <p class="muted">Only used for onboarding and project communication. Read the <a href="/privacy">privacy notice</a>.</p>
+        </div>
+        <div id="form-message" class="message" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

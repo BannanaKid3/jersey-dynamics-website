@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 650" role="img" aria-labelledby="title desc">
+  <title id="title">JD Hand four-digit layout</title>
+  <desc id="desc">An underactuated robotic hand with two fingers in the center and one thumb on each side.</desc>
+  <defs>
+    <linearGradient id="palm" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#263640"/><stop offset="1" stop-color="#172229"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#081116" flood-opacity=".45"/></filter>
+  </defs>
+  <g opacity=".2" stroke="#a8c7d8" stroke-width="1"><path d="M0 86h560M0 166h560M0 246h560M0 326h560M0 406h560M0 486h560M0 566h560M80 0v650M160 0v650M240 0v650M320 0v650M400 0v650M480 0v650"/></g>
+  <g fill="none" stroke="#91b6ca" stroke-width="1.5" stroke-dasharray="6 8" opacity=".65"><path d="M144 82V26H66"/><path d="M218 64V20h66"/><path d="M69 201H14v-54"/><path d="M488 202h56v-54"/><path d="M282 495v76h96"/></g>
+  <g fill="#b9d2df" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1.5"><text x="18" y="24">FINGER / 01</text><text x="292" y="24">FINGER / 02</text><text x="14" y="137">THUMB / A</text><text x="442" y="137">THUMB / B</text><text x="388" y="576">SELECTOR + DRIVE</text></g>
+  <g filter="url(#shadow)">
+    <path d="M151 250 130 104Q127 72 151 68t31 28l24 151" fill="#1c2b33" stroke="#edf2ef" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M225 246 220 84q0-32 25-34t29 30l14 174" fill="#1c2b33" stroke="#edf2ef" stroke-width="7" stroke-linejoin="round"/>
+    <path d="m157 284-91-68q-25-19-10-40t39-5l95 64" fill="#1c2b33" stroke="#edf2ef" stroke-width="7" stroke-linejoin="round"/>
+    <path d="m280 285 101-69q25-18 40 3t-10 40l-98 68" fill="#1c2b33" stroke="#edf2ef" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M135 228 291 228l42 238-31 47H134l-31-47z" fill="url(#palm)" stroke="#edf2ef" stroke-width="8" stroke-linejoin="round"/>
+  </g>
+  <g fill="none" stroke="#67a2c4" stroke-width="4" stroke-linecap="round"><path d="M151 84l4 58 7 61 36 249"/><path d="M246 66l3 66 12 70 27 250"/><path d="M71 193l50 34 44 39 35 186"/><path d="M401 236l-57 31-44 39-12 146"/></g>
+  <g fill="#ff7657" stroke="#172229" stroke-width="3"><circle cx="155" cy="142" r="10"/><circle cx="162" cy="203" r="10"/><circle cx="249" cy="132" r="10"/><circle cx="261" cy="202" r="10"/><circle cx="121" cy="227" r="10"/><circle cx="165" cy="266" r="10"/><circle cx="344" cy="267" r="10"/><circle cx="300" cy="306" r="10"/></g>
+  <g fill="#e9eeeb" stroke="#67a2c4" stroke-width="4"><circle cx="217" cy="409" r="50"/><circle cx="217" cy="409" r="20"/><path d="M207 362v-28h20v28M181 396h-28v20h28M253 396h28v20h-28M207 456v28h20v-28" fill="#22323b"/></g>
+  <path d="M151 518h131" stroke="#ff7657" stroke-width="7" stroke-linecap="round"/>
+  <g fill="#d6e4eb" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13"><text x="126" y="545">2 CENTER FINGERS</text><text x="112" y="565">2 OPPOSING THUMBS</text></g>
+</svg>
